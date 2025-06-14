@@ -21,7 +21,7 @@ const LevelOne = ({ show, title, onClose, configArr, children }: Props) => {
                 <div className="modal-dialog">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h1 className="modal-title fs-5">{title}l</h1>
+                            <h1 className="modal-title fs-5">{title}</h1>
                             <button
                                 type="button"
                                 className="btn-close"

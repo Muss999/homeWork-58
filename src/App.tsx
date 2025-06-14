@@ -1,5 +1,6 @@
 import { useState } from "react";
 import LevelOne from "./components/LevelOne/LevelOne";
+import LevelTwo from "./components/LevelTwo/LevelTwo";
 
 const App = () => {
     const [showModal, setShowModal] = useState(false);
@@ -17,10 +18,10 @@ const App = () => {
     ];
 
     return (
-        <>
+        <div className="container">
             <button
                 type="button"
-                className="btn btn-success"
+                className="btn btn-success mb-3 mt-3"
                 onClick={() => {
                     setShowModal(true);
                 }}
@@ -36,7 +37,11 @@ const App = () => {
             >
                 <p>This is modal content</p>
             </LevelOne>
-        </>
+            <LevelTwo type="danger" onDismiss={() => {}}>
+                This is danger alert
+            </LevelTwo>
+            <LevelTwo type="primary">This is primary alert</LevelTwo>
+        </div>
     );
 };
 
